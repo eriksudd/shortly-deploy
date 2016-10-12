@@ -1,0 +1,846 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-git',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of /Users/student/Desktop/shortly-deploy/package.json
+5 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/bcrypt-nodejs/package.json
+6 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/bluebird/package.json
+7 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/body-parser/package.json
+8 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/bookshelf/package.json
+9 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/chai/package.json
+10 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/cookie-parser/package.json
+11 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/ejs/package.json
+12 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/eslint-config-hackreactor/package.json
+13 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/express-partials/package.json
+15 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/express-session/package.json
+16 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt/package.json
+17 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-contrib-concat/package.json
+18 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-contrib-cssmin/package.json
+19 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-contrib-uglify/package.json
+20 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-contrib-watch/package.json
+21 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-eslint/package.json
+22 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-mocha-test/package.json
+23 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-nodemon/package.json
+24 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-shell/package.json
+25 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/knex/package.json
+26 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/mocha/package.json
+27 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/mongoose/package.json
+28 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/request/package.json
+29 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/sqlite3/package.json
+30 verbose installManyTop reading scoped package data from /Users/student/Desktop/shortly-deploy/node_modules/supertest/package.json
+31 info package.json mocha@2.5.3 No README data
+32 info package.json bcrypt-nodejs@0.0.3 No license field.
+33 info package.json grunt@0.4.5 No license field.
+34 info package.json express-partials@0.2.0 No license field.
+35 info package.json grunt-mocha-test@0.12.7 No license field.
+36 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/package.json
+37 silly cache add args [ 'grunt-git', null ]
+38 verbose cache add spec grunt-git
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'grunt-git',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'grunt-git',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed grunt-git@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for grunt-git
+42 info addNameTag [ 'grunt-git', 'latest' ]
+43 silly mapToRegistry name grunt-git
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'grunt-git',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   name: 'grunt-git',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri https://registry.npmjs.org/grunt-git
+48 verbose addNameTag registry:https://registry.npmjs.org/grunt-git not in flight; fetching
+49 verbose request uri https://registry.npmjs.org/grunt-git
+50 verbose request no auth needed
+51 info attempt registry request try #1 at 3:42:01 PM
+52 verbose request id 94b944d082169149
+53 http request GET https://registry.npmjs.org/grunt-git
+54 http 200 https://registry.npmjs.org/grunt-git
+55 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+55 verbose headers   etag: '"62VV428Q1NGHP5CTAK8MR7WVH"',
+55 verbose headers   'content-type': 'application/json',
+55 verbose headers   'content-encoding': 'gzip',
+55 verbose headers   'cache-control': 'max-age=300',
+55 verbose headers   'content-length': '10372',
+55 verbose headers   'accept-ranges': 'bytes',
+55 verbose headers   date: 'Wed, 12 Oct 2016 22:42:01 GMT',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   age: '0',
+55 verbose headers   connection: 'keep-alive',
+55 verbose headers   'x-served-by': 'cache-sea1924-SEA',
+55 verbose headers   'x-cache': 'MISS',
+55 verbose headers   'x-cache-hits': '0',
+55 verbose headers   'x-timer': 'S1476312121.707071,VS0,VE41',
+55 verbose headers   vary: 'Accept-Encoding' }
+56 silly get cb [ 200,
+56 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+56 silly get     etag: '"62VV428Q1NGHP5CTAK8MR7WVH"',
+56 silly get     'content-type': 'application/json',
+56 silly get     'content-encoding': 'gzip',
+56 silly get     'cache-control': 'max-age=300',
+56 silly get     'content-length': '10372',
+56 silly get     'accept-ranges': 'bytes',
+56 silly get     date: 'Wed, 12 Oct 2016 22:42:01 GMT',
+56 silly get     via: '1.1 varnish',
+56 silly get     age: '0',
+56 silly get     connection: 'keep-alive',
+56 silly get     'x-served-by': 'cache-sea1924-SEA',
+56 silly get     'x-cache': 'MISS',
+56 silly get     'x-cache-hits': '0',
+56 silly get     'x-timer': 'S1476312121.707071,VS0,VE41',
+56 silly get     vary: 'Accept-Encoding' } ]
+57 verbose get saving grunt-git to /Users/student/.npm/registry.npmjs.org/grunt-git/.cache.json
+58 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+59 silly addNameTag next cb for grunt-git with tag latest
+60 silly addNamed grunt-git@1.0.0
+61 verbose addNamed "1.0.0" is a plain semver version for grunt-git
+62 silly mapToRegistry name grunt-git
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'grunt-git',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   name: 'grunt-git',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/grunt-git
+67 verbose addRemoteTarball https://registry.npmjs.org/grunt-git/-/grunt-git-1.0.0.tgz not in flight; adding
+68 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-git/-/grunt-git-1.0.0.tgz',
+68 verbose addRemoteTarball   'f2a1333d089a93137a4ee45f97fc90fa40df1f97' ]
+69 info retry fetch attempt 1 at 3:42:01 PM
+70 info attempt registry request try #1 at 3:42:01 PM
+71 http fetch GET https://registry.npmjs.org/grunt-git/-/grunt-git-1.0.0.tgz
+72 http fetch 200 https://registry.npmjs.org/grunt-git/-/grunt-git-1.0.0.tgz
+73 silly fetchAndShaCheck shasum f2a1333d089a93137a4ee45f97fc90fa40df1f97
+74 verbose addTmpTarball /var/folders/_k/kyz_1lq103v533q_v8yrwd2c0000gp/T/npm-4360-cab1d2e4/registry.npmjs.org/grunt-git/-/grunt-git-1.0.0.tgz not in flight; adding
+75 verbose addTmpTarball already have metadata; skipping unpack for grunt-git@1.0.0
+76 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+77 silly cache afterAdd grunt-git@1.0.0
+78 verbose afterAdd /Users/student/.npm/grunt-git/1.0.0/package/package.json not in flight; writing
+79 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+80 verbose afterAdd /Users/student/.npm/grunt-git/1.0.0/package/package.json written
+81 silly install resolved [ { name: 'grunt-git',
+81 silly install resolved     description: 'Git commands for grunt.',
+81 silly install resolved     version: '1.0.0',
+81 silly install resolved     homepage: 'https://github.com/rubenv/grunt-git',
+81 silly install resolved     author:
+81 silly install resolved      { name: 'Ruben Vermeersch',
+81 silly install resolved        email: 'ruben@savanne.be',
+81 silly install resolved        url: 'http://savanne.be/' },
+81 silly install resolved     repository: { type: 'git', url: 'git://github.com/rubenv/grunt-git.git' },
+81 silly install resolved     bugs: { url: 'https://github.com/rubenv/grunt-git/issues' },
+81 silly install resolved     licenses: [ [Object] ],
+81 silly install resolved     main: 'Gruntfile.js',
+81 silly install resolved     engines: { node: '>= 0.12.2' },
+81 silly install resolved     scripts: { test: 'grunt test' },
+81 silly install resolved     devDependencies:
+81 silly install resolved      { grunt: '~1.0.1',
+81 silly install resolved        'grunt-bump': '0.7.0',
+81 silly install resolved        'grunt-contrib-clean': '~1.0.0',
+81 silly install resolved        'grunt-contrib-jshint': '~1.0.0',
+81 silly install resolved        'grunt-contrib-watch': '~1.0.0',
+81 silly install resolved        'grunt-jscs': '~2.8.0',
+81 silly install resolved        'grunt-mocha-cli': '~2.1.0' },
+81 silly install resolved     peerDependencies: { grunt: '~1.0.1' },
+81 silly install resolved     keywords: [ 'gruntplugin' ],
+81 silly install resolved     dependencies: { flopmang: '^0.0.1' },
+81 silly install resolved     gitHead: '7983539f332520831d56231b7083eeb1ec976948',
+81 silly install resolved     _id: 'grunt-git@1.0.0',
+81 silly install resolved     _shasum: 'f2a1333d089a93137a4ee45f97fc90fa40df1f97',
+81 silly install resolved     _from: 'grunt-git@latest',
+81 silly install resolved     _npmVersion: '3.8.1',
+81 silly install resolved     _nodeVersion: '4.3.0',
+81 silly install resolved     _npmUser: { name: 'rubenv', email: 'ruben@savanne.be' },
+81 silly install resolved     maintainers: [ [Object] ],
+81 silly install resolved     dist:
+81 silly install resolved      { shasum: 'f2a1333d089a93137a4ee45f97fc90fa40df1f97',
+81 silly install resolved        tarball: 'https://registry.npmjs.org/grunt-git/-/grunt-git-1.0.0.tgz' },
+81 silly install resolved     _npmOperationalInternal:
+81 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+81 silly install resolved        tmp: 'tmp/grunt-git-1.0.0.tgz_1460787535553_0.10965499607846141' },
+81 silly install resolved     directories: {},
+81 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-git/-/grunt-git-1.0.0.tgz' } ]
+82 info install grunt-git@1.0.0 into /Users/student/Desktop/shortly-deploy
+83 info installOne grunt-git@1.0.0
+84 verbose installOne of grunt-git to /Users/student/Desktop/shortly-deploy not in flight; installing
+85 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+86 verbose lock using /Users/student/.npm/_locks/grunt-git-bdee7726220e5d82.lock for /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+87 silly install write writing grunt-git 1.0.0 to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+88 verbose unbuild node_modules/grunt-git
+89 silly gentlyRm /Users/student/Desktop/shortly-deploy/node_modules/grunt-git is being purged from base /Users/student/Desktop/shortly-deploy
+90 verbose gentlyRm don't care about contents; nuking /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+91 verbose tar unpack /Users/student/.npm/grunt-git/1.0.0/package.tgz
+92 verbose tar unpacking to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+93 silly gentlyRm /Users/student/Desktop/shortly-deploy/node_modules/grunt-git is being purged
+94 verbose gentlyRm don't care about contents; nuking /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+95 silly gunzTarPerm modes [ '755', '644' ]
+96 silly gunzTarPerm extractEntry package.json
+97 silly gunzTarPerm extractEntry README.md
+98 silly gunzTarPerm extractEntry LICENSE
+99 silly gunzTarPerm extractEntry Gruntfile.js
+100 silly gunzTarPerm extractEntry .jscs.json
+101 silly gunzTarPerm extractEntry lib/command_add.js
+102 silly gunzTarPerm extractEntry lib/command_commit.js
+103 silly gunzTarPerm extractEntry lib/command_diff.js
+104 silly gunzTarPerm extractEntry lib/command_fetch.js
+105 silly gunzTarPerm extractEntry lib/command_log.js
+106 silly gunzTarPerm extractEntry lib/command_clone.js
+107 silly gunzTarPerm extractEntry lib/command_pull.js
+108 silly gunzTarPerm extractEntry lib/command_push.js
+109 silly gunzTarPerm extractEntry lib/command_rebase.js
+110 silly gunzTarPerm extractEntry lib/command_reset.js
+111 silly gunzTarPerm extractEntry lib/command_rm.js
+112 silly gunzTarPerm extractEntry lib/command_clean.js
+113 silly gunzTarPerm extractEntry lib/command_stash.js
+114 silly gunzTarPerm extractEntry lib/command_checkout.js
+115 silly gunzTarPerm extractEntry lib/command_tag.js
+116 silly gunzTarPerm extractEntry lib/command_archive.js
+117 silly gunzTarPerm extractEntry lib/commands.js
+118 silly gunzTarPerm extractEntry lib/command_merge.js
+119 silly gunzTarPerm extractEntry tasks/git.js
+120 silly gunzTarPerm extractEntry .travis.yml
+121 verbose write writing to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/package.json
+122 info preinstall grunt-git@1.0.0
+123 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/package.json
+124 silly prepareForInstallMany adding flopmang@^0.0.1 from grunt-git dependencies
+125 silly prepareForInstallMany adding grunt@~1.0.1 from grunt-git peerDependencies
+126 warn peerDependencies The peer dependency grunt@~1.0.1 included from grunt-git will no
+127 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+128 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+129 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/package.json
+130 silly cache add args [ 'flopmang@^0.0.1', null ]
+131 verbose cache add spec flopmang@^0.0.1
+132 silly cache add parsed spec Result {
+132 silly cache add   raw: 'flopmang@^0.0.1',
+132 silly cache add   scope: null,
+132 silly cache add   name: 'flopmang',
+132 silly cache add   rawSpec: '^0.0.1',
+132 silly cache add   spec: '>=0.0.1 <0.0.2',
+132 silly cache add   type: 'range' }
+133 silly addNamed flopmang@>=0.0.1 <0.0.2
+134 verbose addNamed ">=0.0.1 <0.0.2" is a valid semver range for flopmang
+135 silly addNameRange { name: 'flopmang', range: '>=0.0.1 <0.0.2', hasData: false }
+136 silly mapToRegistry name flopmang
+137 silly mapToRegistry using default registry
+138 silly mapToRegistry registry https://registry.npmjs.org/
+139 silly mapToRegistry data Result {
+139 silly mapToRegistry   raw: 'flopmang',
+139 silly mapToRegistry   scope: null,
+139 silly mapToRegistry   name: 'flopmang',
+139 silly mapToRegistry   rawSpec: '',
+139 silly mapToRegistry   spec: 'latest',
+139 silly mapToRegistry   type: 'tag' }
+140 silly mapToRegistry uri https://registry.npmjs.org/flopmang
+141 verbose addNameRange registry:https://registry.npmjs.org/flopmang not in flight; fetching
+142 verbose request uri https://registry.npmjs.org/flopmang
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 3:42:01 PM
+145 http request GET https://registry.npmjs.org/flopmang
+146 http 200 https://registry.npmjs.org/flopmang
+147 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+147 verbose headers   etag: '"DUDIDOTVGTH0L5UIB0VEMPT1P"',
+147 verbose headers   'content-type': 'application/json',
+147 verbose headers   'content-encoding': 'gzip',
+147 verbose headers   'cache-control': 'max-age=300',
+147 verbose headers   'content-length': '3715',
+147 verbose headers   'accept-ranges': 'bytes',
+147 verbose headers   date: 'Wed, 12 Oct 2016 22:42:02 GMT',
+147 verbose headers   via: '1.1 varnish',
+147 verbose headers   age: '0',
+147 verbose headers   connection: 'keep-alive',
+147 verbose headers   'x-served-by': 'cache-sea1924-SEA',
+147 verbose headers   'x-cache': 'MISS',
+147 verbose headers   'x-cache-hits': '0',
+147 verbose headers   'x-timer': 'S1476312122.068058,VS0,VE108',
+147 verbose headers   vary: 'Accept-Encoding' }
+148 silly get cb [ 200,
+148 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+148 silly get     etag: '"DUDIDOTVGTH0L5UIB0VEMPT1P"',
+148 silly get     'content-type': 'application/json',
+148 silly get     'content-encoding': 'gzip',
+148 silly get     'cache-control': 'max-age=300',
+148 silly get     'content-length': '3715',
+148 silly get     'accept-ranges': 'bytes',
+148 silly get     date: 'Wed, 12 Oct 2016 22:42:02 GMT',
+148 silly get     via: '1.1 varnish',
+148 silly get     age: '0',
+148 silly get     connection: 'keep-alive',
+148 silly get     'x-served-by': 'cache-sea1924-SEA',
+148 silly get     'x-cache': 'MISS',
+148 silly get     'x-cache-hits': '0',
+148 silly get     'x-timer': 'S1476312122.068058,VS0,VE108',
+148 silly get     vary: 'Accept-Encoding' } ]
+149 verbose get saving flopmang to /Users/student/.npm/registry.npmjs.org/flopmang/.cache.json
+150 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+151 silly addNameRange number 2 { name: 'flopmang', range: '>=0.0.1 <0.0.2', hasData: true }
+152 silly addNameRange versions [ 'flopmang', [ '0.0.0', '0.0.1' ] ]
+153 silly addNamed flopmang@0.0.1
+154 verbose addNamed "0.0.1" is a plain semver version for flopmang
+155 silly mapToRegistry name flopmang
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry data Result {
+158 silly mapToRegistry   raw: 'flopmang',
+158 silly mapToRegistry   scope: null,
+158 silly mapToRegistry   name: 'flopmang',
+158 silly mapToRegistry   rawSpec: '',
+158 silly mapToRegistry   spec: 'latest',
+158 silly mapToRegistry   type: 'tag' }
+159 silly mapToRegistry uri https://registry.npmjs.org/flopmang
+160 verbose addRemoteTarball https://registry.npmjs.org/flopmang/-/flopmang-0.0.1.tgz not in flight; adding
+161 verbose addRemoteTarball [ 'https://registry.npmjs.org/flopmang/-/flopmang-0.0.1.tgz',
+161 verbose addRemoteTarball   '73e4814eeeb94b44b5acfd8206d92756acdfb3e8' ]
+162 info retry fetch attempt 1 at 3:42:02 PM
+163 info attempt registry request try #1 at 3:42:02 PM
+164 http fetch GET https://registry.npmjs.org/flopmang/-/flopmang-0.0.1.tgz
+165 http fetch 200 https://registry.npmjs.org/flopmang/-/flopmang-0.0.1.tgz
+166 silly fetchAndShaCheck shasum 73e4814eeeb94b44b5acfd8206d92756acdfb3e8
+167 verbose addTmpTarball /var/folders/_k/kyz_1lq103v533q_v8yrwd2c0000gp/T/npm-4360-cab1d2e4/registry.npmjs.org/flopmang/-/flopmang-0.0.1.tgz not in flight; adding
+168 verbose addTmpTarball already have metadata; skipping unpack for flopmang@0.0.1
+169 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+170 silly cache afterAdd flopmang@0.0.1
+171 verbose afterAdd /Users/student/.npm/flopmang/0.0.1/package/package.json not in flight; writing
+172 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+173 verbose afterAdd /Users/student/.npm/flopmang/0.0.1/package/package.json written
+174 silly install resolved [ { name: 'flopmang',
+174 silly install resolved     version: '0.0.1',
+174 silly install resolved     description: 'Flag Option Manager for Grunt: framework for converting grunt task-options into CLI flags for child processes',
+174 silly install resolved     main: 'lib/argUtil.js',
+174 silly install resolved     engines: { node: '>= 0.8.0' },
+174 silly install resolved     scripts: { test: 'grunt test' },
+174 silly install resolved     repository:
+174 silly install resolved      { type: 'git',
+174 silly install resolved        url: 'https://github.com/dylancwood/flopmang.git' },
+174 silly install resolved     keywords:
+174 silly install resolved      [ 'grunt',
+174 silly install resolved        'tasks',
+174 silly install resolved        'options',
+174 silly install resolved        'arguments',
+174 silly install resolved        'flags',
+174 silly install resolved        'command',
+174 silly install resolved        'line' ],
+174 silly install resolved     author:
+174 silly install resolved      { name: 'Dylan Wood',
+174 silly install resolved        email: 'dylancwood@gmail.com',
+174 silly install resolved        url: 'bydywo.blogger.com' },
+174 silly install resolved     license: 'MIT',
+174 silly install resolved     bugs: { url: 'https://github.com/dylancwood/flopmang/issues' },
+174 silly install resolved     homepage: 'https://github.com/dylancwood/flopmang',
+174 silly install resolved     devDependencies:
+174 silly install resolved      { grunt: '~0.4.0',
+174 silly install resolved        'grunt-bump': '0.0.13',
+174 silly install resolved        'grunt-contrib-jshint': '~0.1.1',
+174 silly install resolved        'grunt-contrib-watch': '~0.5.3',
+174 silly install resolved        'grunt-jscs': '~0.6.1',
+174 silly install resolved        'grunt-mocha-cli': '~1.0.1' },
+174 silly install resolved     dependencies: { underscore: '^1.6.0', 'underscore.string': '^2.3.3' },
+174 silly install resolved     gitHead: '9bb84eef1ea946c453b3ecbd490cc3fc1ee2ceb5',
+174 silly install resolved     _id: 'flopmang@0.0.1',
+174 silly install resolved     _shasum: '73e4814eeeb94b44b5acfd8206d92756acdfb3e8',
+174 silly install resolved     _from: 'flopmang@>=0.0.1 <0.0.2',
+174 silly install resolved     _npmVersion: '1.4.20',
+174 silly install resolved     _npmUser: { name: 'dylancwood', email: 'dylancwood@gmail.com' },
+174 silly install resolved     maintainers: [ [Object] ],
+174 silly install resolved     dist:
+174 silly install resolved      { shasum: '73e4814eeeb94b44b5acfd8206d92756acdfb3e8',
+174 silly install resolved        tarball: 'https://registry.npmjs.org/flopmang/-/flopmang-0.0.1.tgz' },
+174 silly install resolved     directories: {},
+174 silly install resolved     _resolved: 'https://registry.npmjs.org/flopmang/-/flopmang-0.0.1.tgz' } ]
+175 info install flopmang@0.0.1 into /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+176 info installOne flopmang@0.0.1
+177 verbose installOne of flopmang to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git not in flight; installing
+178 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+179 verbose lock using /Users/student/.npm/_locks/flopmang-6dba2825fd47b0aa.lock for /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+180 silly install write writing flopmang 0.0.1 to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+181 verbose unbuild node_modules/grunt-git/node_modules/flopmang
+182 silly gentlyRm /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang is being purged from base /Users/student/Desktop/shortly-deploy
+183 verbose gentlyRm don't care about contents; nuking /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+184 verbose tar unpack /Users/student/.npm/flopmang/0.0.1/package.tgz
+185 verbose tar unpacking to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+186 silly gentlyRm /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang is being purged
+187 verbose gentlyRm don't care about contents; nuking /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+188 silly gunzTarPerm modes [ '755', '644' ]
+189 silly gunzTarPerm extractEntry package.json
+190 silly gunzTarPerm extractEntry .npmignore
+191 silly gunzTarPerm extractEntry README.md
+192 silly gunzTarPerm extractEntry LICENSE
+193 silly gunzTarPerm extractEntry Gruntfile.js
+194 silly gunzTarPerm extractEntry .jscs.json
+195 silly gunzTarPerm extractEntry .jshintrc
+196 silly gunzTarPerm extractEntry lib/arg.js
+197 silly gunzTarPerm extractEntry lib/argUtil.js
+198 silly gunzTarPerm extractEntry test/argUtil_test.js
+199 silly gunzTarPerm extractEntry test/arg_test.js
+200 verbose write writing to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/package.json
+201 info preinstall flopmang@0.0.1
+202 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/package.json
+203 silly prepareForInstallMany adding underscore@^1.6.0 from flopmang dependencies
+204 silly prepareForInstallMany adding underscore.string@^2.3.3 from flopmang dependencies
+205 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/package.json
+206 silly cache add args [ 'underscore@^1.6.0', null ]
+207 verbose cache add spec underscore@^1.6.0
+208 silly cache add args [ 'underscore.string@^2.3.3', null ]
+209 verbose cache add spec underscore.string@^2.3.3
+210 silly cache add parsed spec Result {
+210 silly cache add   raw: 'underscore@^1.6.0',
+210 silly cache add   scope: null,
+210 silly cache add   name: 'underscore',
+210 silly cache add   rawSpec: '^1.6.0',
+210 silly cache add   spec: '>=1.6.0 <2.0.0',
+210 silly cache add   type: 'range' }
+211 silly addNamed underscore@>=1.6.0 <2.0.0
+212 verbose addNamed ">=1.6.0 <2.0.0" is a valid semver range for underscore
+213 silly addNameRange { name: 'underscore', range: '>=1.6.0 <2.0.0', hasData: false }
+214 silly mapToRegistry name underscore
+215 silly mapToRegistry using default registry
+216 silly mapToRegistry registry https://registry.npmjs.org/
+217 silly mapToRegistry data Result {
+217 silly mapToRegistry   raw: 'underscore',
+217 silly mapToRegistry   scope: null,
+217 silly mapToRegistry   name: 'underscore',
+217 silly mapToRegistry   rawSpec: '',
+217 silly mapToRegistry   spec: 'latest',
+217 silly mapToRegistry   type: 'tag' }
+218 silly mapToRegistry uri https://registry.npmjs.org/underscore
+219 verbose addNameRange registry:https://registry.npmjs.org/underscore not in flight; fetching
+220 silly cache add parsed spec Result {
+220 silly cache add   raw: 'underscore.string@^2.3.3',
+220 silly cache add   scope: null,
+220 silly cache add   name: 'underscore.string',
+220 silly cache add   rawSpec: '^2.3.3',
+220 silly cache add   spec: '>=2.3.3 <3.0.0',
+220 silly cache add   type: 'range' }
+221 silly addNamed underscore.string@>=2.3.3 <3.0.0
+222 verbose addNamed ">=2.3.3 <3.0.0" is a valid semver range for underscore.string
+223 silly addNameRange { name: 'underscore.string',
+223 silly addNameRange   range: '>=2.3.3 <3.0.0',
+223 silly addNameRange   hasData: false }
+224 silly mapToRegistry name underscore.string
+225 silly mapToRegistry using default registry
+226 silly mapToRegistry registry https://registry.npmjs.org/
+227 silly mapToRegistry data Result {
+227 silly mapToRegistry   raw: 'underscore.string',
+227 silly mapToRegistry   scope: null,
+227 silly mapToRegistry   name: 'underscore.string',
+227 silly mapToRegistry   rawSpec: '',
+227 silly mapToRegistry   spec: 'latest',
+227 silly mapToRegistry   type: 'tag' }
+228 silly mapToRegistry uri https://registry.npmjs.org/underscore.string
+229 verbose addNameRange registry:https://registry.npmjs.org/underscore.string not in flight; fetching
+230 verbose request uri https://registry.npmjs.org/underscore
+231 verbose request no auth needed
+232 info attempt registry request try #1 at 3:42:02 PM
+233 verbose etag "3J9FQSKGYJ5SHLYS58UCK4WVD"
+234 http request GET https://registry.npmjs.org/underscore
+235 verbose request uri https://registry.npmjs.org/underscore.string
+236 verbose request no auth needed
+237 info attempt registry request try #1 at 3:42:02 PM
+238 verbose etag "1MDPNAT2CB33UK3S3SRNNYHIP"
+239 http request GET https://registry.npmjs.org/underscore.string
+240 http 304 https://registry.npmjs.org/underscore
+241 verbose headers { date: 'Wed, 12 Oct 2016 22:42:02 GMT',
+241 verbose headers   via: '1.1 varnish',
+241 verbose headers   'cache-control': 'max-age=300',
+241 verbose headers   etag: '"3J9FQSKGYJ5SHLYS58UCK4WVD"',
+241 verbose headers   age: '73',
+241 verbose headers   connection: 'keep-alive',
+241 verbose headers   'x-served-by': 'cache-sea1924-SEA',
+241 verbose headers   'x-cache': 'HIT',
+241 verbose headers   'x-cache-hits': '23',
+241 verbose headers   'x-timer': 'S1476312122.317600,VS0,VE0',
+241 verbose headers   vary: 'Accept-Encoding' }
+242 silly get cb [ 304,
+242 silly get   { date: 'Wed, 12 Oct 2016 22:42:02 GMT',
+242 silly get     via: '1.1 varnish',
+242 silly get     'cache-control': 'max-age=300',
+242 silly get     etag: '"3J9FQSKGYJ5SHLYS58UCK4WVD"',
+242 silly get     age: '73',
+242 silly get     connection: 'keep-alive',
+242 silly get     'x-served-by': 'cache-sea1924-SEA',
+242 silly get     'x-cache': 'HIT',
+242 silly get     'x-cache-hits': '23',
+242 silly get     'x-timer': 'S1476312122.317600,VS0,VE0',
+242 silly get     vary: 'Accept-Encoding' } ]
+243 verbose etag https://registry.npmjs.org/underscore from cache
+244 verbose get saving underscore to /Users/student/.npm/registry.npmjs.org/underscore/.cache.json
+245 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+246 silly addNameRange number 2 { name: 'underscore', range: '>=1.6.0 <2.0.0', hasData: true }
+247 silly addNameRange versions [ 'underscore',
+247 silly addNameRange   [ '1.0.3',
+247 silly addNameRange     '1.0.4',
+247 silly addNameRange     '1.1.0',
+247 silly addNameRange     '1.1.1',
+247 silly addNameRange     '1.1.2',
+247 silly addNameRange     '1.1.3',
+247 silly addNameRange     '1.1.4',
+247 silly addNameRange     '1.1.5',
+247 silly addNameRange     '1.1.6',
+247 silly addNameRange     '1.1.7',
+247 silly addNameRange     '1.2.0',
+247 silly addNameRange     '1.2.1',
+247 silly addNameRange     '1.2.2',
+247 silly addNameRange     '1.2.3',
+247 silly addNameRange     '1.2.4',
+247 silly addNameRange     '1.3.0',
+247 silly addNameRange     '1.3.1',
+247 silly addNameRange     '1.3.2',
+247 silly addNameRange     '1.3.3',
+247 silly addNameRange     '1.4.0',
+247 silly addNameRange     '1.4.1',
+247 silly addNameRange     '1.4.2',
+247 silly addNameRange     '1.4.3',
+247 silly addNameRange     '1.4.4',
+247 silly addNameRange     '1.5.0',
+247 silly addNameRange     '1.5.1',
+247 silly addNameRange     '1.5.2',
+247 silly addNameRange     '1.6.0',
+247 silly addNameRange     '1.7.0',
+247 silly addNameRange     '1.8.0',
+247 silly addNameRange     '1.8.1',
+247 silly addNameRange     '1.8.2',
+247 silly addNameRange     '1.8.3' ] ]
+248 silly addNamed underscore@1.8.3
+249 verbose addNamed "1.8.3" is a plain semver version for underscore
+250 silly mapToRegistry name underscore
+251 silly mapToRegistry using default registry
+252 silly mapToRegistry registry https://registry.npmjs.org/
+253 silly mapToRegistry data Result {
+253 silly mapToRegistry   raw: 'underscore',
+253 silly mapToRegistry   scope: null,
+253 silly mapToRegistry   name: 'underscore',
+253 silly mapToRegistry   rawSpec: '',
+253 silly mapToRegistry   spec: 'latest',
+253 silly mapToRegistry   type: 'tag' }
+254 silly mapToRegistry uri https://registry.npmjs.org/underscore
+255 verbose addRemoteTarball https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz not in flight; adding
+256 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+256 verbose addRemoteTarball   '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022' ]
+257 info retry fetch attempt 1 at 3:42:02 PM
+258 info attempt registry request try #1 at 3:42:02 PM
+259 http fetch GET https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+260 http fetch 200 https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+261 http 304 https://registry.npmjs.org/underscore.string
+262 verbose headers { date: 'Wed, 12 Oct 2016 22:42:02 GMT',
+262 verbose headers   via: '1.1 varnish',
+262 verbose headers   'cache-control': 'max-age=300',
+262 verbose headers   etag: '"1MDPNAT2CB33UK3S3SRNNYHIP"',
+262 verbose headers   age: '273',
+262 verbose headers   connection: 'keep-alive',
+262 verbose headers   'x-served-by': 'cache-sea1926-SEA',
+262 verbose headers   'x-cache': 'HIT',
+262 verbose headers   'x-cache-hits': '28',
+262 verbose headers   'x-timer': 'S1476312122.377054,VS0,VE0',
+262 verbose headers   vary: 'Accept-Encoding' }
+263 silly get cb [ 304,
+263 silly get   { date: 'Wed, 12 Oct 2016 22:42:02 GMT',
+263 silly get     via: '1.1 varnish',
+263 silly get     'cache-control': 'max-age=300',
+263 silly get     etag: '"1MDPNAT2CB33UK3S3SRNNYHIP"',
+263 silly get     age: '273',
+263 silly get     connection: 'keep-alive',
+263 silly get     'x-served-by': 'cache-sea1926-SEA',
+263 silly get     'x-cache': 'HIT',
+263 silly get     'x-cache-hits': '28',
+263 silly get     'x-timer': 'S1476312122.377054,VS0,VE0',
+263 silly get     vary: 'Accept-Encoding' } ]
+264 verbose etag https://registry.npmjs.org/underscore.string from cache
+265 verbose get saving underscore.string to /Users/student/.npm/registry.npmjs.org/underscore.string/.cache.json
+266 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+267 silly fetchAndShaCheck shasum 4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022
+268 verbose addTmpTarball /var/folders/_k/kyz_1lq103v533q_v8yrwd2c0000gp/T/npm-4360-cab1d2e4/registry.npmjs.org/underscore/-/underscore-1.8.3.tgz not in flight; adding
+269 verbose addTmpTarball already have metadata; skipping unpack for underscore@1.8.3
+270 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+271 silly addNameRange number 2 { name: 'underscore.string',
+271 silly addNameRange   range: '>=2.3.3 <3.0.0',
+271 silly addNameRange   hasData: true }
+272 silly addNameRange versions [ 'underscore.string',
+272 silly addNameRange   [ '0.9.2',
+272 silly addNameRange     '1.0.0',
+272 silly addNameRange     '1.1.3',
+272 silly addNameRange     '1.1.4',
+272 silly addNameRange     '1.1.5',
+272 silly addNameRange     '1.1.6',
+272 silly addNameRange     '2.0.0',
+272 silly addNameRange     '2.1.0',
+272 silly addNameRange     '2.1.1',
+272 silly addNameRange     '2.3.0',
+272 silly addNameRange     '2.3.1',
+272 silly addNameRange     '2.3.2',
+272 silly addNameRange     '2.2.1',
+272 silly addNameRange     '2.2.0-rc',
+272 silly addNameRange     '2.3.3',
+272 silly addNameRange     '2.4.0',
+272 silly addNameRange     '3.0.0',
+272 silly addNameRange     '3.0.1',
+272 silly addNameRange     '3.0.2',
+272 silly addNameRange     '3.0.3',
+272 silly addNameRange     '3.1.0',
+272 silly addNameRange     '3.1.1',
+272 silly addNameRange     '3.2.0',
+272 silly addNameRange     '3.2.1',
+272 silly addNameRange     '3.2.2',
+272 silly addNameRange     '3.2.3',
+272 silly addNameRange     '3.3.0',
+272 silly addNameRange     '3.3.2',
+272 silly addNameRange     '3.3.3',
+272 silly addNameRange     '3.3.4' ] ]
+273 silly addNamed underscore.string@2.4.0
+274 verbose addNamed "2.4.0" is a plain semver version for underscore.string
+275 silly cache afterAdd underscore.string@2.4.0
+276 verbose afterAdd /Users/student/.npm/underscore.string/2.4.0/package/package.json not in flight; writing
+277 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+278 silly cache afterAdd underscore@1.8.3
+279 verbose afterAdd /Users/student/.npm/underscore/1.8.3/package/package.json not in flight; writing
+280 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+281 verbose afterAdd /Users/student/.npm/underscore.string/2.4.0/package/package.json written
+282 verbose afterAdd /Users/student/.npm/underscore/1.8.3/package/package.json written
+283 silly install resolved [ { name: 'underscore.string',
+283 silly install resolved     version: '2.4.0',
+283 silly install resolved     description: 'String manipulation extensions for Underscore.js javascript library.',
+283 silly install resolved     homepage: 'http://epeli.github.com/underscore.string/',
+283 silly install resolved     contributors:
+283 silly install resolved      [ [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object] ],
+283 silly install resolved     keywords: [ 'underscore', 'string' ],
+283 silly install resolved     main: './lib/underscore.string.js',
+283 silly install resolved     directories: { lib: './lib' },
+283 silly install resolved     engines: { node: '*' },
+283 silly install resolved     repository:
+283 silly install resolved      { type: 'git',
+283 silly install resolved        url: 'git+https://github.com/epeli/underscore.string.git' },
+283 silly install resolved     bugs: { url: 'https://github.com/epeli/underscore.string/issues' },
+283 silly install resolved     licenses: [ [Object] ],
+283 silly install resolved     scripts: { test: 'gulp test' },
+283 silly install resolved     devDependencies:
+283 silly install resolved      { gulp: '~3.8.10',
+283 silly install resolved        'gulp-uglify': '~1.0.1',
+283 silly install resolved        'gulp-qunit': '~1.0.0',
+283 silly install resolved        'gulp-clean': '~0.3.1',
+283 silly install resolved        'gulp-rename': '~1.2.0' },
+283 silly install resolved     _id: 'underscore.string@2.4.0',
+283 silly install resolved     dist:
+283 silly install resolved      { shasum: '8cdd8fbac4e2d2ea1e7e2e8097c42f442280f85b',
+283 silly install resolved        tarball: 'https://registry.npmjs.org/underscore.string/-/underscore.string-2.4.0.tgz' },
+283 silly install resolved     _from: 'underscore.string@>=2.3.3 <3.0.0',
+283 silly install resolved     _npmVersion: '1.3.24',
+283 silly install resolved     _npmUser: { name: 'epeli', email: 'esa-matti@suuronen.org' },
+283 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+283 silly install resolved     _shasum: '8cdd8fbac4e2d2ea1e7e2e8097c42f442280f85b',
+283 silly install resolved     _resolved: 'https://registry.npmjs.org/underscore.string/-/underscore.string-2.4.0.tgz',
+283 silly install resolved     readme: 'ERROR: No README data found!' },
+283 silly install resolved   { name: 'underscore',
+283 silly install resolved     description: 'JavaScript\'s functional programming helper library.',
+283 silly install resolved     homepage: 'http://underscorejs.org',
+283 silly install resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+283 silly install resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+283 silly install resolved     repository:
+283 silly install resolved      { type: 'git',
+283 silly install resolved        url: 'git://github.com/jashkenas/underscore.git' },
+283 silly install resolved     main: 'underscore.js',
+283 silly install resolved     version: '1.8.3',
+283 silly install resolved     devDependencies:
+283 silly install resolved      { docco: '*',
+283 silly install resolved        eslint: '0.6.x',
+283 silly install resolved        karma: '~0.12.31',
+283 silly install resolved        'karma-qunit': '~0.1.4',
+283 silly install resolved        'qunit-cli': '~0.2.0',
+283 silly install resolved        'uglify-js': '2.4.x' },
+283 silly install resolved     scripts:
+283 silly install resolved      { test: 'npm run test-node && npm run lint',
+283 silly install resolved        lint: 'eslint underscore.js test/*.js',
+283 silly install resolved        'test-node': 'qunit-cli test/*.js',
+283 silly install resolved        'test-browser': 'npm i karma-phantomjs-launcher && ./node_modules/karma/bin/karma start',
+283 silly install resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+283 silly install resolved        doc: 'docco underscore.js' },
+283 silly install resolved     license: 'MIT',
+283 silly install resolved     files:
+283 silly install resolved      [ 'underscore.js',
+283 silly install resolved        'underscore-min.js',
+283 silly install resolved        'underscore-min.map',
+283 silly install resolved        'LICENSE' ],
+283 silly install resolved     gitHead: 'e4743ab712b8ab42ad4ccb48b155034d02394e4d',
+283 silly install resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+283 silly install resolved     _id: 'underscore@1.8.3',
+283 silly install resolved     _shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+283 silly install resolved     _from: 'underscore@>=1.6.0 <2.0.0',
+283 silly install resolved     _npmVersion: '1.4.28',
+283 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+283 silly install resolved     maintainers: [ [Object] ],
+283 silly install resolved     dist:
+283 silly install resolved      { shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+283 silly install resolved        tarball: 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz' },
+283 silly install resolved     directories: {},
+283 silly install resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz' } ]
+284 info install underscore.string@2.4.0 into /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+285 info install underscore@1.8.3 into /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+286 info installOne underscore.string@2.4.0
+287 verbose installOne of underscore.string to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang not in flight; installing
+288 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+289 info installOne underscore@1.8.3
+290 verbose installOne of underscore to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang not in flight; installing
+291 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+292 verbose lock using /Users/student/.npm/_locks/underscore-string-7b80cba488c22435.lock for /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+293 verbose lock using /Users/student/.npm/_locks/underscore-f8b09c2771d128d6.lock for /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+294 silly install write writing underscore.string 2.4.0 to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+295 silly install write writing underscore 1.8.3 to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+296 verbose unbuild node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+297 verbose unbuild node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+298 silly gentlyRm /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string is being purged from base /Users/student/Desktop/shortly-deploy
+299 verbose gentlyRm don't care about contents; nuking /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+300 silly gentlyRm /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore is being purged from base /Users/student/Desktop/shortly-deploy
+301 verbose gentlyRm don't care about contents; nuking /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+302 verbose tar unpack /Users/student/.npm/underscore.string/2.4.0/package.tgz
+303 verbose tar unpacking to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+304 silly gentlyRm /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string is being purged
+305 verbose gentlyRm don't care about contents; nuking /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+306 verbose tar unpack /Users/student/.npm/underscore/1.8.3/package.tgz
+307 verbose tar unpacking to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+308 silly gentlyRm /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore is being purged
+309 verbose gentlyRm don't care about contents; nuking /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+310 silly gunzTarPerm modes [ '755', '644' ]
+311 silly gunzTarPerm modes [ '755', '644' ]
+312 silly gunzTarPerm extractEntry package.json
+313 silly gunzTarPerm extractEntry package.json
+314 silly gunzTarPerm extractEntry README.md
+315 silly gunzTarPerm extractEntry LICENSE
+316 silly gunzTarPerm extractEntry .npmignore
+317 silly gunzTarPerm extractEntry foo.js
+318 silly gunzTarPerm extractEntry gulpfile.js
+319 silly gunzTarPerm extractEntry .travis.yml
+320 silly gunzTarPerm extractEntry underscore.js
+321 silly gunzTarPerm extractEntry underscore-min.js
+322 silly gunzTarPerm extractEntry underscore-min.map
+323 silly gunzTarPerm extractEntry README.markdown
+324 silly gunzTarPerm extractEntry bower.json
+325 silly gunzTarPerm extractEntry component.json
+326 silly gunzTarPerm extractEntry lib/underscore.string.js
+327 silly gunzTarPerm extractEntry libpeerconnection.log
+328 verbose write writing to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore/package.json
+329 info preinstall underscore@1.8.3
+330 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore/package.json
+331 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore/package.json
+332 silly install resolved []
+333 verbose about to build /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+334 info build /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+335 verbose write writing to /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string/package.json
+336 info linkStuff underscore@1.8.3
+337 silly linkStuff underscore@1.8.3 has /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules as its parent node_modules
+338 info preinstall underscore.string@2.4.0
+339 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string/package.json
+340 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string/package.json
+341 verbose linkBins underscore@1.8.3
+342 verbose linkMans underscore@1.8.3
+343 verbose rebuildBundles underscore@1.8.3
+344 info install underscore@1.8.3
+345 info postinstall underscore@1.8.3
+346 silly install resolved []
+347 verbose about to build /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+348 info build /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+349 verbose unlock done using /Users/student/.npm/_locks/underscore-f8b09c2771d128d6.lock for /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore
+350 info linkStuff underscore.string@2.4.0
+351 silly linkStuff underscore.string@2.4.0 has /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules as its parent node_modules
+352 verbose linkBins underscore.string@2.4.0
+353 verbose linkMans underscore.string@2.4.0
+354 verbose rebuildBundles underscore.string@2.4.0
+355 info install underscore.string@2.4.0
+356 info postinstall underscore.string@2.4.0
+357 verbose unlock done using /Users/student/.npm/_locks/underscore-string-7b80cba488c22435.lock for /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang/node_modules/underscore.string
+358 verbose about to build /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+359 info build /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+360 info linkStuff flopmang@0.0.1
+361 silly linkStuff flopmang@0.0.1 has /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules as its parent node_modules
+362 verbose linkBins flopmang@0.0.1
+363 verbose linkMans flopmang@0.0.1
+364 verbose rebuildBundles flopmang@0.0.1
+365 verbose rebuildBundles [ 'underscore', 'underscore.string' ]
+366 info install flopmang@0.0.1
+367 info postinstall flopmang@0.0.1
+368 verbose unlock done using /Users/student/.npm/_locks/flopmang-6dba2825fd47b0aa.lock for /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/node_modules/flopmang
+369 verbose about to build /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+370 info build /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+371 info linkStuff grunt-git@1.0.0
+372 silly linkStuff grunt-git@1.0.0 has /Users/student/Desktop/shortly-deploy/node_modules as its parent node_modules
+373 verbose linkBins grunt-git@1.0.0
+374 verbose linkMans grunt-git@1.0.0
+375 verbose rebuildBundles grunt-git@1.0.0
+376 verbose rebuildBundles [ 'flopmang' ]
+377 info install grunt-git@1.0.0
+378 info postinstall grunt-git@1.0.0
+379 verbose readDependencies loading dependencies from /Users/student/Desktop/shortly-deploy/package.json
+380 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/bcrypt-nodejs/package.json
+381 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/bluebird/package.json
+382 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/body-parser/package.json
+383 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/bookshelf/package.json
+384 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/chai/package.json
+385 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/cookie-parser/package.json
+386 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/ejs/package.json
+387 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/eslint-config-hackreactor/package.json
+388 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/express/package.json
+389 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/express-partials/package.json
+390 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/express-session/package.json
+391 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt/package.json
+392 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-contrib-concat/package.json
+393 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-contrib-cssmin/package.json
+394 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-contrib-uglify/package.json
+395 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-contrib-watch/package.json
+396 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-eslint/package.json
+397 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-git/package.json
+398 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-mocha-test/package.json
+399 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-nodemon/package.json
+400 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/grunt-shell/package.json
+401 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/knex/package.json
+402 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/mocha/package.json
+403 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/mongoose/package.json
+404 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/request/package.json
+405 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/sqlite3/package.json
+406 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/supertest/package.json
+407 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/.bin/knex/package.json
+408 verbose targetResolver reading package data from /Users/student/Desktop/shortly-deploy/node_modules/.bin/mocha/package.json
+409 verbose already installed skipping grunt@~1.0.1 /Users/student/Desktop/shortly-deploy
+410 silly install resolved []
+411 verbose unlock done using /Users/student/.npm/_locks/grunt-git-bdee7726220e5d82.lock for /Users/student/Desktop/shortly-deploy/node_modules/grunt-git
+412 verbose validateInstall loading /Users/student/Desktop/shortly-deploy/package.json for validation
+413 verbose stack Error: The package grunt@0.4.5 does not satisfy its siblings' peerDependencies requirements!
+413 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+413 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+413 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+413 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+413 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+413 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+413 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+413 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+413 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+413 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+414 verbose cwd /Users/student/Desktop/shortly-deploy
+415 error Darwin 15.3.0
+416 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-git" "--save-dev"
+417 error node v4.4.3
+418 error npm  v2.15.1
+419 error code EPEERINVALID
+420 error peerinvalid The package grunt@0.4.5 does not satisfy its siblings' peerDependencies requirements!
+420 error peerinvalid Peer grunt-contrib-concat@1.0.1 wants grunt@>=0.4.0
+420 error peerinvalid Peer grunt-eslint@18.1.0 wants grunt@>=0.4.0
+420 error peerinvalid Peer grunt-nodemon@0.4.2 wants grunt@>=0.4.0
+420 error peerinvalid Peer grunt-shell@1.3.1 wants grunt@>=0.4.0
+420 error peerinvalid Peer grunt-git@1.0.0 wants grunt@~1.0.1
+421 verbose exit [ 1, true ]

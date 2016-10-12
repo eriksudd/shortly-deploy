@@ -2,6 +2,40 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
+    gitadd: {
+      task: {
+        options: {
+          force: true,
+          all: true,
+          // cwd: '/'
+        }
+      }
+    },
+
+    // git commit -m "Repository updated on <current date time>"
+    gitcommit: {
+      task: {
+        options: {
+          message: 'Repository updated on ' + grunt.template.today(),
+          allowEmpty: true,
+          // cwd: '/'
+        }
+      }
+    },
+
+   // git push origin master
+    gitpush: {
+      task: {
+        options: {
+          remote: 'origin',
+          branch: 'master',
+          // cwd: '/'
+        }
+      }
+    },
+
+
     concat: {
     },
 
@@ -63,6 +97,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-nodemon');
+  grunt.loadNpmTasks('grunt-git');
 
   grunt.registerTask('server-dev', function (target) {
     grunt.task.run([ 'nodemon', 'watch' ]);
@@ -77,6 +112,13 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
+  ]);
+
+    // Create task
+  grunt.registerTask('git', [
+    'gitadd',
+    'gitcommit',
+    'gitpush'
   ]);
 
   grunt.registerTask('upload', function(n) {
