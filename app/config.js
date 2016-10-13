@@ -38,3 +38,80 @@ db.knex.schema.hasTable('users').then(function(exists) {
 });
 
 module.exports = db;
+
+
+
+
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test');
+
+var mongodb = mongoose.connection;
+mongodb.on('error', console.error.bind(console, 'connection error:'));
+mongodb.once('open', function() {
+  console.log("connected!!");
+});
+
+
+
+var urlsSchema = mongoose.Schema({
+  url: {type: String, required: true, unique: true},
+  baseUrl: {type: String, required: true},
+  code: {type: String, required: true},
+  title: {type: String, required: true},
+  visits: { type: Number, default: 0 }
+}, {timestamps: true});
+
+
+var usersSchema = mongoose.Schema({
+  username: {type: String, required: true, unique: true},
+  baseUrl: {type: String, required: true},
+  password: {type: String, required: true}
+}, {timestamps: true});
+
+
+
+var Url = mongoose.model('Url', urlsSchema);
+var User = mongoose.model('User', usersSchema);
+
+var google = new Url({
+  url: 'www.google.com',
+  baseUrl: 'google.com',
+  code: 'somecode',
+  title: 'google'
+});
+
+google.save();
+
+
+var erik = new User({
+  username: 'erik',
+  baseUrl: 'whatever',
+  password: 'password'
+});
+
+var steve = new User({
+  username: 'steve',
+  baseUrl: 'whatever',
+  password: 'password'
+});
+
+erik.save();
+steve.save();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
