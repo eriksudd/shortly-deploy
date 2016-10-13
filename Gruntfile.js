@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     gitpush: {
       task: {
         options: {
-          remote: 'origin',
+          remote: 'live',
           branch: 'master',
           // cwd: '/'
         }
@@ -43,9 +43,9 @@ module.exports = function(grunt) {
       },
       dist: {
         // the files to concatenate
-        src: ['public/**/*.js'],
+        src: ['public/client/*.js'],
         // the location of the resulting JS file
-        dest: 'dist/<%= pkg.name %>.js'
+        dest: 'public/dist/shortly-deploy.js'
       }
     },
 
@@ -71,7 +71,12 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+          'public/dist/shortly-deploy.min.js': ['public/dist/shortly-deploy.js'],
+          'public/dist/backbone.min.js': ['public/lib/backbone.js'],
+          'public/dist/handlebars.min.js': ['public/lib/handlebars.js'],
+          'public/dist/jquery.min.js': ['public/lib/jquery.js'],
+          'public/dist/underscore.min.js': ['public/lib/underscore.js']
+
         }
       }
     },
@@ -90,6 +95,7 @@ module.exports = function(grunt) {
         files: [
           'public/client/**/*.js',
           'public/lib/**/*.js',
+          'public/style.css'
         ],
         tasks: [
           'concat',
@@ -131,6 +137,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'test',
     'eslint',
     'concat',
     'uglify'
@@ -146,14 +153,15 @@ module.exports = function(grunt) {
 
   grunt.registerTask('upload', function(n) {
     if (grunt.option('prod')) {
-      // add your production server task here
+      grunt.task.run(['git'])
     } else {
       grunt.task.run([ 'server-dev' ]);
     }
   });
 
   grunt.registerTask('deploy', [
-    // add your deploy tasks here
+    'build',
+    'upload'
   ]);
 
 
