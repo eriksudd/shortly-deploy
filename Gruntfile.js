@@ -110,13 +110,9 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
-        command: [
-          'git add .',
-          'git commit -m "' + grunt.template.today() + '"',
-          'git push live master',
-        ].join('&&')
+        command: ['git push live master']
       }
-    },
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
