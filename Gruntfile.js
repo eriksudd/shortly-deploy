@@ -110,6 +110,14 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
+        multiple: {
+          command: [
+            'git add .',
+            'git commit -m "' + grunt.template.today() + '"',
+            'git push live master',
+          ].join('&&')
+        }
+
       }
     },
   });
@@ -151,9 +159,15 @@ module.exports = function(grunt) {
     'gitpush'
   ]);
 
+  grunt.registerTask('server-prod', [
+    'shell:prodServer'
+  ]);
+
+
+
   grunt.registerTask('upload', function(n) {
     if (grunt.option('prod')) {
-      grunt.task.run(['git'])
+      grunt.task.run(['git']);
     } else {
       grunt.task.run([ 'server-dev' ]);
     }
